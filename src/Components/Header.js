@@ -25,7 +25,7 @@ function Header() {
       </Menu>
       <RightMenu>
         <a href="google.com">Shop</a>
-        <a href="google.com">Tesla Account</a>
+        <a href="google.com">Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -84,6 +84,9 @@ const Menu = styled.div`
     padding: 0 10px;
     flex-wrap: no-wrap;
   }
+  p a {
+    color: #393c41;
+  }
   @media (max-width: 768px) {
     display: none;
   }
@@ -92,10 +95,15 @@ const RightMenu = styled.div`
   display: flex;
   align-items: center;
   a {
+    color: #393c41;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 5px 15px;
     flex-wrap: no-wrap;
+  }
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
   }
 `;
 
@@ -121,6 +129,7 @@ const BurgerNav = styled.div`
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     a {
+      color: #393c41;
       font-weight: 600;
     }
   }
