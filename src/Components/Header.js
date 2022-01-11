@@ -12,20 +12,20 @@ function Header() {
 
   return (
     <Container>
-      <a>
+      <a href="google.com">
         <img src="/images/logo.svg" alt="" />
       </a>
       <Menu>
         {cars &&
           cars.map((car, index) => (
             <p>
-              <a href="#">{car}</a>
+              <a href="google.com">{car}</a>
             </p>
           ))}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="google.com">Shop</a>
+        <a href="google.com">Tesla Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -35,23 +35,23 @@ function Header() {
         {cars &&
           cars.map((car, index) => (
             <li>
-              <a href="#">{car}</a>
+              <a href="google.com">{car}</a>
             </li>
           ))}
         <li>
-          <a href="#">Existing Inventory</a>
+          <a href="google.com">Existing Inventory</a>
         </li>
         <li>
-          <a href="#">Used Inventory</a>
+          <a href="google.com">Used Inventory</a>
         </li>
         <li>
-          <a href="#">Trade-in</a>
+          <a href="google.com">Trade-in</a>
         </li>
         <li>
-          <a href="#">Cyber Truck</a>
+          <a href="google.com">Cyber Truck</a>
         </li>
         <li>
-          <a href="#">Roadmaster</a>
+          <a href="google.com">Roadmaster</a>
         </li>
       </BurgerNav>
     </Container>
